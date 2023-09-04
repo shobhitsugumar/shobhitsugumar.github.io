@@ -32,5 +32,14 @@ Together, data structures and algorithms combine and allow programmers to build 
     <description><![CDATA[Click to create an account https://github.com/
 What is Git? Git is a modern and widely used distributed version control system in the world. It is developed to manage projects with high speed and efficiency. The version control system allows us to monitor and work together with our team members at the same workspace. Git is foundation of many services like GitHub and GitLab, but we can use Git without using any other Git services.]]></description>
 </item>
+<item>
+    <title>SQL And DBMS</title>
+    <link>https://shobhitsugumar.github.io/posts/fourth/</link>
+    <pubDate>Wed, 02 Aug 2023 11:02:55 &#43;0530</pubDate>
+    <author>Author</author>
+    <guid>https://shobhitsugumar.github.io/posts/fourth/</guid>
+    <description><![CDATA[*SQL - Structured Query Language.SQL is a programming language used by nearly all relational databases to query, manipulate, and define data, and to provide access control. SQL was first developed at IBM in the 1970s with Oracle as a major contributor, which led to implementation of the SQL ANSI standard, SQL has spurred many extensions from companies such as IBM, Oracle, and Microsoft.
+Sql is used to perform CRUD operatioins. Creat Read Update Delete What is DataBase?]]></description>
+</item>
 </channel>
 </rss>

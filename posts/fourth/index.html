@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>SQL And DBMS - My Blog</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="SQL And DBMS" />
+<meta property="og:description" content="*SQL - Structured Query Language.SQL is a programming language used by nearly all relational databases to query, manipulate, and define data, and to provide access control. SQL was first developed at IBM in the 1970s with Oracle as a major contributor, which led to implementation of the SQL ANSI standard, SQL has spurred many extensions from companies such as IBM, Oracle, and Microsoft.
+Sql is used to perform CRUD operatioins. Creat Read Update Delete What is DataBase?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shobhitsugumar.github.io/posts/fourth/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-02T11:02:55+05:30" />
+<meta property="article:modified_time" content="2023-08-02T11:02:55+05:30" /><meta property="og:site_name" content="My Blog" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SQL And DBMS"/>
+<meta name="twitter:description" content="*SQL - Structured Query Language.SQL is a programming language used by nearly all relational databases to query, manipulate, and define data, and to provide access control. SQL was first developed at IBM in the 1970s with Oracle as a major contributor, which led to implementation of the SQL ANSI standard, SQL has spurred many extensions from companies such as IBM, Oracle, and Microsoft.
+Sql is used to perform CRUD operatioins. Creat Read Update Delete What is DataBase?"/>
+<meta name="application-name" content="My Blog">
+<meta name="apple-mobile-web-app-title" content="My Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://shobhitsugumar.github.io/posts/fourth/" /><link rel="next" href="https://shobhitsugumar.github.io/posts/third/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "SQL And DBMS",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/shobhitsugumar.github.io\/posts\/fourth\/"
+        },"genre": "posts","wordcount":  785 ,
+        "url": "https:\/\/shobhitsugumar.github.io\/posts\/fourth\/","datePublished": "2023-08-02T11:02:55+05:30","dateModified": "2023-08-02T11:02:55+05:30","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My Blog">My Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/first" title="About"> About </a><a class="menu-item" href="/posts/" title="Posts"> Posts </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My Blog">My Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/first" title="About">About</a><a class="menu-item" href="/posts/" title="Posts">Posts</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">SQL And DBMS</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-02">2023-08-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;785 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-is-database">What is DataBase?</a></li>
+        <li><a href="#what-is-database-management-system">What is Database Management System?</a></li>
+        <li><a href="#types-of-database">Types Of DataBase</a></li>
+        <li><a href="#creating-our-first-database">Creating our First Database</a></li>
+        <li><a href="#creating-our-first-table">Creating Our First Table</a></li>
+        <li><a href="#datatypes-in-sql">Datatypes in SQL</a></li>
+        <li><a href="#types-of-sql-commands">Types Of SQL Commands</a></li>
+        <li><a href="#constraint">CONSTRAINT</a></li>
+        <li><a href="#clauses-in-sql">CLAUSES IN SQL</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>*<strong>SQL</strong> - Structured Query Language.SQL is a programming language used by nearly all relational databases to query, manipulate, and define data, and to provide access control. SQL was first developed at IBM in the 1970s with Oracle as a major contributor, which led to implementation of the SQL ANSI standard, SQL has spurred many extensions from companies such as IBM, Oracle, and Microsoft.</p>
+<ul>
+<li>Sql is used to perform <strong>CRUD</strong> operatioins.
+<ul>
+<li><strong>C</strong>reat</li>
+<li><strong>R</strong>ead</li>
+<li><strong>U</strong>pdate</li>
+<li><strong>D</strong>elete</li>
+</ul>
+</li>
+</ul>
+<h3 id="what-is-database">What is DataBase?</h3>
+<ul>
+<li>Database is a organized collection of structured data.A database is usually controlled by a <strong>database management system (DBMS)</strong>. Together, the data and the DBMS, along with the applications that are associated with them, are referred to as a database system, often shortened to just database.</li>
+</ul>
+<h3 id="what-is-database-management-system">What is Database Management System?</h3>
+<ul>
+<li>DBMS serves as a interface betweeen Database and end user or programs, allowing user to retrieve,update and manage how the informations are organized and optimized.
+DBMS also facilitates oversight and control of databases, enabling a variety of administrative operations such as performance monitoring, tuning, and backup and recovery.</li>
+</ul>
+<h3 id="types-of-database">Types Of DataBase</h3>
+<table>
+<thead>
+<tr>
+<th>Relational DataBase</th>
+<th>Non Relational DataBase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data stored in table</td>
+<td>Data is not stored in table</td>
+</tr>
+<tr>
+<td>1) MySQL</td>
+<td>1) Nosql</td>
+</tr>
+<tr>
+<td>2) Sql server</td>
+<td></td>
+</tr>
+<tr>
+<td>3) Oracle</td>
+<td></td>
+</tr>
+<tr>
+<td>4) Postgre Sql</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>In Table with the help of the Column we can get to know about the structure(Design). In Database we call Structure as <strong>Schema</strong></li>
+<li>In Table with the help of the row we can get to know about the individual information</li>
+</ul>
+<h3 id="creating-our-first-database">Creating our First Database</h3>
+<ul>
+<li>
+<p><strong>To Create a Database</strong></p>
+<pre><code>Syntax -   CREATE DATABASE database_name; (This helps to create a Database)
+</code></pre>
+<ul>
+<li>uppercase and lowercase are acceptable.Its is good way to use uppercase.</li>
+</ul>
+</li>
+<li>
+<p><strong>To Drop a Database</strong></p>
+<pre><code>Syntax -   DROP DATABASE database_name; (This helpz to drop the Database)
+</code></pre>
+</li>
+<li>
+<p><strong>To Access the Database</strong></p>
+<pre><code>Syntax -   USE database_name;   (This helpz to access the Database)
+</code></pre>
+</li>
+</ul>
+<h3 id="creating-our-first-table">Creating Our First Table</h3>
+<ul>
+<li>
+<p><strong>Creating Table</strong></p>
+<pre><code>Syntax -   CREATE TABLE table_name(   
+           Column_name1 datatype  constraint,
+           Column_name2 datatype  constraint);
+</code></pre>
+</li>
+<li>
+<p><strong>Inserting Data Into The Table</strong></p>
+<pre><code>Syntax -    INSERT INTO table_name  VALUES (eg: 1,shobhit,26);
+</code></pre>
+</li>
+<li>
+<p><strong>To Display the Values</strong></p>
+<pre><code>Sysntax -   SELECT *  FROM table_name;
+            * This symbol  displays all the values
+</code></pre>
+</li>
+</ul>
+<h3 id="datatypes-in-sql">Datatypes in SQL</h3>
+<ul>
+<li>Now lets dive into different Data types</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Datatype</th>
+<th style="text-align:center">Description</th>
+<th style="text-align:center">Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">CHAR</td>
+<td style="text-align:center">String(0-255) can store character of fixes length</td>
+<td style="text-align:center">CHAR(50)</td>
+</tr>
+<tr>
+<td style="text-align:center">VARCHAR</td>
+<td style="text-align:center">String(0-255) can store character upto fixed length</td>
+<td style="text-align:center">VARCHAR(50)</td>
+</tr>
+<tr>
+<td style="text-align:center">BLOB</td>
+<td style="text-align:center">String(0-65535)can store longer strings</td>
+<td style="text-align:center">BLOB(1000)</td>
+</tr>
+<tr>
+<td style="text-align:center">INT</td>
+<td style="text-align:center">integer(-2147483648) to (2147483647)</td>
+<td style="text-align:center">INT</td>
+</tr>
+<tr>
+<td style="text-align:center">TINYINT</td>
+<td style="text-align:center">integer (-128 to 127)</td>
+<td style="text-align:center">TINYINT</td>
+</tr>
+<tr>
+<td style="text-align:center">BIGINT</td>
+<td style="text-align:center">integer(-9232372036854775808) to (9232372036854775807)</td>
+<td style="text-align:center">BIGINT</td>
+</tr>
+<tr>
+<td style="text-align:center">BIT</td>
+<td style="text-align:center">Can store x- bit values.x can range from 1 to 64</td>
+<td style="text-align:center">BIT(2)</td>
+</tr>
+<tr>
+<td style="text-align:center">FLOAT</td>
+<td style="text-align:center">Stores Decimal numbers</td>
+<td style="text-align:center">FLOAT</td>
+</tr>
+<tr>
+<td style="text-align:center">DOUBLE</td>
+<td style="text-align:center">Decimal number with 24 to 54 digit</td>
+<td style="text-align:center">DOUBLE</td>
+</tr>
+<tr>
+<td style="text-align:center">BOOLEAN</td>
+<td style="text-align:center">boolean values 0 or 1</td>
+<td style="text-align:center">BOOLEAN</td>
+</tr>
+<tr>
+<td style="text-align:center">DATE</td>
+<td style="text-align:center">date in format YYYY-MM-DD</td>
+<td style="text-align:center">DATE</td>
+</tr>
+<tr>
+<td style="text-align:center">YEAR</td>
+<td style="text-align:center">year in 4 digit format ranging from 1901 to 2155</td>
+<td style="text-align:center">YEAR</td>
+</tr>
+</tbody>
+</table>
+<h3 id="types-of-sql-commands">Types Of SQL Commands</h3>
+<ul>
+<li>
+<p>Data Definition Language ( DDL)</p>
+<ul>
+<li>CREATE</li>
+<li>ALTER</li>
+<li>RENAME</li>
+<li>TRUNCATE</li>
+<li>DROP</li>
+</ul>
+</li>
+<li>
+<p>Data Query Language (DQL)</p>
+<ul>
+<li>SELECT</li>
+</ul>
+</li>
+<li>
+<p>Data Manipulation Language (DML)</p>
+<ul>
+<li>INSERT</li>
+<li>UPDATE</li>
+<li>DELETE</li>
+</ul>
+</li>
+<li>
+<p>Data Control Language (DCL)</p>
+<ul>
+<li>GRANT</li>
+<li>REVOKE</li>
+</ul>
+</li>
+<li>
+<p>Transaction Control Language (TCL)</p>
+<ul>
+<li>START</li>
+<li>COMMIT</li>
+<li>ROLLBACK</li>
+</ul>
+</li>
+</ul>
+<h3 id="constraint">CONSTRAINT</h3>
+<ul>
+<li>
+<p>In SQL (Structured Query Language) a constraint is a rule or restriction applied to a table column or a set of columns to ensure data integrity, accuracy, and consistency in a relational database. Constraints help maintain the quality and reliability of data by preventing the insertion, update, or deletion of records that would violate the defined rules. There are several types of constraints in SQL:</p>
+<ul>
+<li>
+<p><strong>PRIMARY KEY CONSTRAINT</strong>:</p>
+<ul>
+<li>
+<p>Ensures each row in table has a unique identifier(no duplicate value) and should not contain NULL VALUE .There should be only 1 Primary Key inside the table.</p>
+<pre><code>CREATE TABLE Students (
+StudentID INT PRIMARY KEY,
+Name VARCHAR(255));
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>FOREIGN KEY</strong>:</p>
+<ul>
+<li>
+<p>Enforces referential integrity by ensuring that values in a column (the foreign key) match values in another table&rsquo;s primary key column (the referenced table). This constraint helps establish relationships between tables.Can have duplicate value and can have NULL value.</p>
+<pre><code>CREATE TABLE teacher(
+cust_id INT,
+FOREIGN KEY (cust_id) REFERENCES Students(StudentID)
+);
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>NOT NULL</strong> :</p>
+<ul>
+<li>
+<p>Column cannot hava a NULL value.This constraint enforces that every row must have a value for the specified column.</p>
+<pre><code>CREATE TABLE Products (
+ProductID INT PRIMARY KEY,
+ProductName VARCHAR(255) NOT NULL,
+Price DECIMAL(10, 2));
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>UNIQUE</strong> :</p>
+<ul>
+<li>
+<p>All vlues in column are different and unique across all the row and it  allows NULL values.</p>
+<pre><code>CREATE TABLE Employees (
+EmployeeID INT UNIQUE,
+LastName VARCHAR(255),
+FirstName VARCHAR(255));
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>CHECK</strong>:</p>
+<ul>
+<li>
+<p>Allows you to define a condition that must be true for each row in a table.If the condition evaluates to false, the row is not inserted or updated.</p>
+<pre><code>CREATE TABLE city (
+id INT PRIMARY KEY,
+city VARCHAR(50),
+age INT,
+CONSTRAINT age_check CHECK (age &gt;= 18));
+
+        (OR)
+
+CREATE TABLE city(
+id INT PRIMARY KEY,
+city VARCHAR(50),
+age INI CHECK( age &gt;=18));
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="clauses-in-sql">CLAUSES IN SQL</h3>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-08-02</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://shobhitsugumar.github.io/posts/fourth/" data-title="SQL And DBMS"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://shobhitsugumar.github.io/posts/fourth/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://shobhitsugumar.github.io/posts/fourth/" data-title="SQL And DBMS"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://shobhitsugumar.github.io/posts/fourth/" data-title="SQL And DBMS"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://shobhitsugumar.github.io/posts/fourth/" data-title="SQL And DBMS"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/posts/third/" class="next" rel="next" title="Git &amp; GitHub">Git & GitHub<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.4">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
