@@ -9,8 +9,8 @@
 Sql is used to perform CRUD operatioins. Creat Read Update Delete What is DataBase?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shobhitsugumar.github.io/posts/fourth/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-02T11:02:55+05:30" />
-<meta property="article:modified_time" content="2023-08-02T11:02:55+05:30" /><meta property="og:site_name" content="My Blog" />
+<meta property="article:published_time" content="2023-08-14T11:02:55+05:30" />
+<meta property="article:modified_time" content="2023-08-14T11:02:55+05:30" /><meta property="og:site_name" content="My Blog" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SQL And DBMS"/>
 <meta name="twitter:description" content="*SQL - Structured Query Language.SQL is a programming language used by nearly all relational databases to query, manipulate, and define data, and to provide access control. SQL was first developed at IBM in the 1970s with Oracle as a major contributor, which led to implementation of the SQL ANSI standard, SQL has spurred many extensions from companies such as IBM, Oracle, and Microsoft.
@@ -29,8 +29,8 @@ Sql is used to perform CRUD operatioins. Creat Read Update Delete What is DataBa
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/shobhitsugumar.github.io\/posts\/fourth\/"
-        },"genre": "posts","wordcount":  785 ,
-        "url": "https:\/\/shobhitsugumar.github.io\/posts\/fourth\/","datePublished": "2023-08-02T11:02:55+05:30","dateModified": "2023-08-02T11:02:55+05:30","publisher": {
+        },"genre": "posts","wordcount":  1523 ,
+        "url": "https:\/\/shobhitsugumar.github.io\/posts\/fourth\/","datePublished": "2023-08-14T11:02:55+05:30","dateModified": "2023-08-14T11:02:55+05:30","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -71,8 +71,8 @@ Sql is used to perform CRUD operatioins. Creat Read Update Delete What is DataBa
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">SQL And DBMS</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-02">2023-08-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;785 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-14">2023-08-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1523 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -90,12 +90,15 @@ Sql is used to perform CRUD operatioins. Creat Read Update Delete What is DataBa
         <li><a href="#datatypes-in-sql">Datatypes in SQL</a></li>
         <li><a href="#types-of-sql-commands">Types Of SQL Commands</a></li>
         <li><a href="#constraint">CONSTRAINT</a></li>
-        <li><a href="#clauses-in-sql">CLAUSES IN SQL</a></li>
+        <li><a href="#clauses-in-sql-">CLAUSES IN SQL :</a></li>
+        <li><a href="#aggregate-function-">AGGREGATE FUNCTION :</a></li>
+        <li><a href="#table-related-queries">TABLE RELATED QUERIES</a></li>
+        <li><a href="#sql-sub-queries">SQL SUB QUERIES</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>*<strong>SQL</strong> - Structured Query Language.SQL is a programming language used by nearly all relational databases to query, manipulate, and define data, and to provide access control. SQL was first developed at IBM in the 1970s with Oracle as a major contributor, which led to implementation of the SQL ANSI standard, SQL has spurred many extensions from companies such as IBM, Oracle, and Microsoft.</p>
+            </div><div class="content" id="content"><p><strong>*SQL</strong> - Structured Query Language.SQL is a programming language used by nearly all relational databases to query, manipulate, and define data, and to provide access control. SQL was first developed at IBM in the 1970s with Oracle as a major contributor, which led to implementation of the SQL ANSI standard, SQL has spurred many extensions from companies such as IBM, Oracle, and Microsoft.</p>
 <ul>
 <li>Sql is used to perform <strong>CRUD</strong> operatioins.
 <ul>
@@ -175,7 +178,7 @@ DBMS also facilitates oversight and control of databases, enabling a variety of 
 <ul>
 <li>
 <p><strong>Creating Table</strong></p>
-<pre><code>Syntax -   CREATE TABLE table_name(   
+<pre><code>Syntax -   CREATE TABLE table_name(
            Column_name1 datatype  constraint,
            Column_name2 datatype  constraint);
 </code></pre>
@@ -337,6 +340,13 @@ FOREIGN KEY (cust_id) REFERENCES Students(StudentID)
 );
 </code></pre>
 </li>
+<li>
+<p>When some changes are made in parent key then to change it in child key we use casecade</p>
+<ul>
+<li>ON DELETE CASCADE</li>
+<li>ON UPDATE CASECADE</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -356,7 +366,7 @@ Price DECIMAL(10, 2));
 <p><strong>UNIQUE</strong> :</p>
 <ul>
 <li>
-<p>All vlues in column are different and unique across all the row and it  allows NULL values.</p>
+<p>All vlues in column are different and unique across all the row and it allows NULL values.</p>
 <pre><code>CREATE TABLE Employees (
 EmployeeID INT UNIQUE,
 LastName VARCHAR(255),
@@ -386,15 +396,249 @@ age INI CHECK( age &gt;=18));
 </li>
 </ul>
 </li>
+<li>
+<p><strong>DEFAULT</strong>:</p>
+<ul>
+<li>
+<p>Sets default value to the column</p>
+<pre><code>Salary INT DEFAULT 25000
+</code></pre>
+<p>if the value is not entered then the default value will be set.</p>
+</li>
 </ul>
 </li>
 </ul>
-<h3 id="clauses-in-sql">CLAUSES IN SQL</h3>
+</li>
+</ul>
+<h3 id="clauses-in-sql-">CLAUSES IN SQL :</h3>
+<ul>
+<li>
+<p><strong>SELECT CLAUSE</strong> -The SELECT CLAUSE is used to specify the columns you want to retrieve from a database table.</p>
+<pre><code>      SELECT column1, column2 FROM table_name;
+</code></pre>
+</li>
+<li>
+<p><strong>WHERE CLAUSE</strong> - WHERE CLAUSE is used to filter rows based on conditions.(used with SELECT)</p>
+<pre><code>      SELECT column1,column2 FROM table_name
+      WHERE condition ;
+</code></pre>
+</li>
+<li>
+<p><strong>FROM CLAUSE</strong> - The FROM CLAUSE specifies the table from which your retrieving data.</p>
+<pre><code>      SELECT column1,column2 FROM table_name;
+</code></pre>
+</li>
+<li>
+<p><strong>GROUP BY CLAUSE</strong> - To group values that have same values.It collect data from multiple records and group the result by one or more column .Generally we use group by value with some aggregate on functions.</p>
+<pre><code>      SELECT colm1, COUNT(*)
+      FROM table_name
+      GROUP BY colm1;
+</code></pre>
+</li>
+<li>
+<p><strong>HAVING CLAUSE</strong> - The HAVING CLAUSE is used to filter the result of GROUP BY value .Similar to where i.e applies some conditions on rows used when we want to apply any condition after GROUP BY. 5 seconds</p>
+<pre><code>      SELECT COUNT(name),city
+      FROM student
+      GROUP BY city
+      HAVING MAX(marks&gt;90);
+</code></pre>
+</li>
+<li>
+<p><strong>ORDER BY CLAUSE</strong> - The ORDER BY CLAUSE is used to set the result in ascending or descending.Here if you dont mention asc or des by default it takes it arranges in ascending.</p>
+<pre><code>       SELECT COUNT(name),city
+       FROM student
+       GROUP BY city
+       ORDERED BY city ASC;
+</code></pre>
+<p><strong>GENERAL ORDER</strong></p>
+<pre><code>SELECT col
+FROM table_name
+WHERE conditon
+GROUP BY column
+HAVING conditon
+ORDER BY column ASC/DSC;
+</code></pre>
+</li>
+</ul>
+<h3 id="aggregate-function-">AGGREGATE FUNCTION :</h3>
+<pre><code>1)MAX()
+2)MIN()
+3)COUNT()
+4)AVG()
+5)SUM()
+</code></pre>
+<h3 id="table-related-queries">TABLE RELATED QUERIES</h3>
+<ul>
+<li>
+<p><strong>UPDATE</strong> : To Update exsisting rows.</p>
+<p>UPDATE table_name
+SET col1=value,col2=vlaue
+WHERE condition;</p>
+<p>(EXAMPLE)</p>
+<p>UPDATE student
+SET grade= &ldquo;o&rdquo;
+WHERE grade =&ldquo;A&rdquo;;</p>
+</li>
+<li>
+<p><strong>DELETE</strong> :To Delete the row from the table.</p>
+<p>DELETE FROM table_name
+wHERE Condition</p>
+</li>
+<li>
+<p><strong>ALTER</strong> : To ALTER the column.</p>
+<ol>
+<li>
+<p>ADD COLUMN</p>
+<p>eg ALTER TABLE table_name
+ADD COLUMN column_name datatype constraint ;</p>
+</li>
+<li>
+<p>DROP COLUMN</p>
+<p>eg ALTER TABLE table_name
+DROP COLUMN column_name;</p>
+</li>
+<li>
+<p>RENAME TO TABLE</p>
+<p>eg ALTER TABLE table_name
+RENAME TO ew_table_name;</p>
+</li>
+<li>
+<p>CHANGE COLUMN</p>
+<p>eg ALTER TABLE table_name
+CHANGE old_name new_name new datatype new constraint;</p>
+</li>
+<li>
+<p>MODIFY COLUMN</p>
+<p>eg ALTER TABLE table_name
+MOFDIFY col_name new_datatype new_constraint;</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>TRUNCATE COMMAND</strong> : Delets all the data in the table</p>
+<pre><code>eg  TRUNCATE TABLE table_name;
+
+Difference between TRUNCATE and DROP
+
+TRUNCATE : Delets the data in the table
+DROP     : Delets the whole table.
+</code></pre>
+</li>
+<li>
+<p><strong>JOIN in SQL</strong> : Join is used to combine rows from two or more table. based on a related column between them.</p>
+<ul>
+<li>
+<p><strong>TYPES OF JOIN</strong></p>
+<ol>
+<li>INNER JOIN</li>
+<li>OUTER JOIN
+<ul>
+<li>LEFT JOIN</li>
+<li>RIGHT JOIN</li>
+<li>FULL JOIN</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>INNER JOIN</strong></p>
+<ul>
+<li>Returns all the records thata have matching value in both table.</li>
+</ul>
+<p>SYNTAX:</p>
+<pre><code>   SELECT column
+   FROM table A
+   INNER JOIN table B
+   ON table A.col_name = table B.col_name;
+</code></pre>
+</li>
+<li>
+<p><strong>LEFT JOIN</strong> : Returns all the record from the left table and the matched record from the right table.</p>
+<p>SYNTAX :</p>
+<pre><code>   SELECT column
+   FROM table A
+   LEFT JOIN table B
+   ON table A.colname= B.colname2;
+</code></pre>
+</li>
+<li>
+<p><strong>RIGHT JOIN</strong> :Returns all the record from the right table and the matched record from the left table.</p>
+<p>SYNTAX :</p>
+<pre><code>   SELECT column
+   FROM table A
+   RIGHT JOIN table B
+   ON table A.colname= B.colname;
+</code></pre>
+</li>
+<li>
+<p><strong>FULL JOIN</strong> : Returns all the records when there is a match between right and left table.</p>
+<p>SYNTAX :</p>
+<pre><code>   SELECT column
+   FROM table A
+   LEFT JOIN  table B
+   ON A.id =B.id
+
+   UNION
+
+   SELECT column
+   FROM table A
+   RIGHT JOIN table B
+   ON A.id= B.id ;
+</code></pre>
+<ul>
+<li>IN mysql there is no FULL JOIN so we use UNION.</li>
+</ul>
+</li>
+<li>
+<p><strong>SELF JOIN</strong> : It is a regular join but the table is joined by itself.</p>
+<p>SYNTAX :</p>
+<pre><code>   SELECT column
+   FROM table as a    (alias)
+   JOIN table as b
+   ON a.column = b.column;
+</code></pre>
+</li>
+<li>
+<p><strong>UNION</strong> : The UNION clause in SQL is used to combine the result sets of two or more SELECT statements into a single result set. It is used when you want to retrieve data from multiple tables or perform multiple queries and combine the results as if they were one result set.</p>
+<pre><code>   SYNTAX :
+
+       SELECT column FROM table A
+       UNION
+       SELECT column FROM table B;
+</code></pre>
+<p>TO use : every SELECT should have same no of columns
+column should have similar</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>UNION : Gives unique value</p>
+</li>
+<li>
+<p>UNION ALL: Gives DUPLICATE VALUE</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="sql-sub-queries">SQL SUB QUERIES</h3>
+<ul>
+<li>
+<p>A subquery is a SQL query nested inside a larger query.</p>
+</li>
+<li>
+<p>A subquery may occur in :</p>
+<ul>
+<li>SELECT CLAUSE</li>
+<li>WHERE CLAUSE</li>
+<li>FROM CLAUSE</li>
+</ul>
+</li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2023-08-02</span>
+                <span>Updated on 2023-08-14</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
